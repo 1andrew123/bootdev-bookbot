@@ -13,6 +13,7 @@ def count_characters(book_text):
     """
     dict_characters = {}
     for char in book_text:
+        char = char.lower()
         if char in dict_characters:
             dict_characters[char] += 1
         else:
